@@ -1,0 +1,33 @@
+{
+  "name": "cursor-expand-thinking",
+  "displayName": "Expand Thinking",
+  "description": "Keeps agent Thinking dropdowns expanded in Cursor chat.",
+  "version": "0.1.0",
+  "license": "GPL-3.0-or-later",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cursorExpandThinking.enable",
+        "title": "Expand Thinking: Enable"
+      },
+      {
+        "command": "cursorExpandThinking.disable",
+        "title": "Expand Thinking: Disable"
+      }
+    ]
+  }
+}
